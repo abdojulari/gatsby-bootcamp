@@ -57,7 +57,12 @@ module.exports = {
           icon: `${__dirname}/src/assets/png/logo.png`,
         },
       },
-      'gatsby-plugin-offline'
+      {
+        resolve: `gatsby-plugin-offline`,
+        options: {
+          precachePages: [`/`,`/about/`, `/blog/*`, `/contact/`],
+        },
+      },
   ]
 
 }
