@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "develop": "env-cmd .env gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format:index": "prettier \"index.html\" --write",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
