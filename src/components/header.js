@@ -16,7 +16,7 @@ const Header = () => {
       } 
     `)
   
-  const navOption = () => {
+  const navOption = (window) => {
       if( (window.location.pathname === '/') || (window.location.pathname === '/about') || (window.location.pathname === '/blog') || (window.location.pathname === '/contact')){
           return (
             <ul className={headerStyles.navList}>
