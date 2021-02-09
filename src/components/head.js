@@ -21,7 +21,6 @@ const Head = ({home_title, meta}) => {
             <meta name="note" content="environment=development" />
            <link rel="icon" href="/favicon-32x32.png?v=8b958e583020b9004e4d777ae1bc752b" type="image/png" /><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
            <meta name="theme-color" content="#9cc1e5" />
-           <script src="/socket.io/socket.io.js"></script>
            <link rel="apple-touch-icon" href="../assets/apple-icon-180.png" />
             <meta name="apple-mobile-web-app-capable" content="yes" />
             <link rel="apple-touch-startup-image" href="../assets/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
