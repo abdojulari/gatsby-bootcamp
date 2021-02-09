@@ -15,9 +15,9 @@ const Header = () => {
         }
       } 
     `)
-  
-  const navOption = (window) => {
-      if( (window.location.pathname === '/') || (window.location.pathname === '/about') || (window.location.pathname === '/blog') || (window.location.pathname === '/contact')){
+  const url =  typeof window !== 'undefined' ? window.location.pathname : '';
+  const navOption = () => {
+      if( (url === '/') || (url === '/about') || (url === '/blog') || (url === '/contact')){
           return (
             <ul className={headerStyles.navList}>
             <li>
