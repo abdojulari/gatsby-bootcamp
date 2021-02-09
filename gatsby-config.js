@@ -48,13 +48,13 @@ module.exports = {
        {
         resolve: `gatsby-plugin-manifest`,
         options: {
-          name: `Blog Post`,
-          short_name: `BlogPost`,
+          name: `Simply Blog`,
+          short_name: `SimBlog`,
           start_url: `/`,
           background_color: `#4d565e`,
           theme_color: `#9cc1e5`,
           display: `standalone`,
-          icon: `${__dirname}/src/assets/png/logo.png`,
+          icon: `${__dirname}/src/assets/png/logo.jpg`,
         },
       },
       {
