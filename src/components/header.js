@@ -15,6 +15,41 @@ const Header = () => {
         }
       } 
     `)
+  
+  const navOption = () => {
+      if( (window.location.pathname === '/') || (window.location.pathname === '/about') || (window.location.pathname === '/blog') || (window.location.pathname === '/contact')){
+          return (
+            <ul className={headerStyles.navList}>
+            <li>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/"> 
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/about"> 
+                  About
+                </Link>
+              </li>
+            <li>
+              <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/blog"> 
+                Blog
+              </Link></li>
+            <li>
+                  <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/contact"> 
+                  Contact
+                  </Link>
+              </li>
+          </ul>
+          )
+      } else {
+         return (
+           <ul className={headerStyles.navList}>
+             <li className={headerStyles.navItem}><Link to='/blog'>Back</Link></li>
+           </ul>
+         )
+      }
+    
+  }
   return (
     <header className={headerStyles.header}>
       <h1>
@@ -22,28 +57,7 @@ const Header = () => {
             {data.site.siteMetadata.title}
         </Link>
       </h1>
-      <ul className={headerStyles.navList}>
-        <li>
-          <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/"> 
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/about"> 
-              About
-            </Link>
-          </li>
-        <li>
-          <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/blog"> 
-            Blog
-          </Link></li>
-        <li>
-              <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/contact"> 
-              Contact
-              </Link>
-          </li>
-      </ul>
- 
+        { navOption()}
     </header>
   )
 }
