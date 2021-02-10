@@ -1,12 +1,10 @@
 import React from "react"
-import { Link, graphql, useStaticQuery} from 'gatsby'
-//import './header.module.scss'
-
+import { Link, graphql, useStaticQuery, navigate} from 'gatsby'
 import headerStyles from  './header.module.scss'
 
 const Header = () => {
-
-  const data = useStaticQuery(graphql`
+const url =  typeof window !== 'undefined' ? window.location.pathname : '';
+const data = useStaticQuery(graphql`
       query{
         site {
           siteMetadata {
@@ -14,9 +12,9 @@ const Header = () => {
           }
         }
       } 
-    `)
-  const url =  typeof window !== 'undefined' ? window.location.pathname : '';
-  const navOption = () => {
+`)
+ 
+const navOption = () => {
       if( (url === '/') || (url === '/about') || (url === '/blog') || (url === '/contact')){
           return (
             <ul className={headerStyles.navList}>
@@ -44,7 +42,7 @@ const Header = () => {
       } else {
          return (
            <ul className={headerStyles.navList}>
-             <li className={headerStyles.navItem}><Link to='/blog'>Back</Link></li>
+             <li className={headerStyles.navItem}><button onClick={() => {navigate(-1) }}>Back</button></li>
            </ul>
          )
       }
