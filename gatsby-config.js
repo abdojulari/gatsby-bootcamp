@@ -49,7 +49,7 @@ module.exports = {
         resolve: `gatsby-plugin-manifest`,
         options: {
           name: `Simply Blog`,
-          short_name: `S-Blog`,
+          short_name: `SimBlog`,
           start_url: `/`,
           background_color: `#4d565e`,
           theme_color: `#9cc1e5`,
