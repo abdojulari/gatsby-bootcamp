@@ -8,7 +8,9 @@ const Contact = () => {
                <Head home_title="Contact" />
                <p>
                 <span>Email: abdulkabirojulari@gmail.com</span>
-            </p>
+                <span>Twitter: @ojularias</span>
+                <span>Discord: abdulojus</span>
+              </p>
            </Layout>  
             
 

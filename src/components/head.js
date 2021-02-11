@@ -21,7 +21,7 @@ const Head = ({home_title}) => {
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <meta name="note" content="environment=development" />
             <link rel="icon" href="../../public/favicon-32x32.png?v=bcbf30a41c553596c95add2665cb0920" type="image/png" />
-            <link rel="manifest" href="../../public/manifest.webmanifest" crossorigin="anonymous" />
+            <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
             <meta name="theme-color" content="#9cc1e5" />
             <link rel="apple-touch-icon" href="../../public/assets/apple-icon-180.png" />
             <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,7 +51,7 @@ const Head = ({home_title}) => {
             <link rel="apple-touch-startup-image" href="../../public/assets/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
             <link rel="apple-touch-startup-image" href="../../public/assets/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" />
             <link rel="apple-touch-startup-image" href="../../public/assets/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
-   </Helmet>
+        </Helmet>
     )
 }
 
