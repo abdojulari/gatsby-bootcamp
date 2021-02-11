@@ -15,35 +15,36 @@ const data = useStaticQuery(graphql`
 `)
  
 const navOption = () => {
-      if( (url === '/') || (url === '/about') || (url === '/blog') || (url === '/contact')){
+      if( (url.indexOf('/blog/') === 0) ){
           return (
             <ul className={headerStyles.navList}>
-            <li>
-              <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/"> 
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/about"> 
-                  About
-                </Link>
-              </li>
-            <li>
-              <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/blog"> 
-                Blog
-              </Link></li>
-            <li>
-                  <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/contact"> 
-                  Contact
-                  </Link>
-              </li>
-          </ul>
+             <li className={headerStyles.navItem}><button onClick={() => {navigate(-1) }}>Back</button></li>
+           </ul>
+            
           )
       } else {
          return (
-           <ul className={headerStyles.navList}>
-             <li className={headerStyles.navItem}><button onClick={() => {navigate(-1) }}>Back</button></li>
-           </ul>
+          <ul className={headerStyles.navList}>
+          <li>
+            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/"> 
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/about"> 
+                About
+              </Link>
+            </li>
+          <li>
+            <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/blog"> 
+              Blog
+            </Link></li>
+          <li>
+                <Link className={headerStyles.navItem } activeClassName={headerStyles.activeNavItem} to="/contact"> 
+                Contact
+                </Link>
+            </li>
+        </ul>
          )
       }
     

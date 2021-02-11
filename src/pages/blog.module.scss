@@ -5,22 +5,26 @@
 .post{
     margin: 1rem 0;
     a {
-        background: #f4f4f4;
+        background: #3f3e3e;
         text-decoration: none;
         display: block;
         padding: 1rem;
+        color:#fff;
 
     }
     a:hover {
         background: #e4e4e4;
-        color: #6666;
+        color: #000;
     }
     h2 {
         margin-bottom:0;
     }
     p {
-        color: #777777;
+        color: #999;
         font-size:  .8rem;
         font-style: italic;
+    }
+    p:hover {
+        color: rgb(36, 6, 6)
     }
 }
