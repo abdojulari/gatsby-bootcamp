@@ -20,7 +20,7 @@ const navOption = () => {
             <ul className={headerStyles.navList}>
              <li className={headerStyles.navItem}><button onClick={() => {navigate(-1) }}>Back</button></li>
            </ul>
-            
+      
           )
       } else {
          return (
