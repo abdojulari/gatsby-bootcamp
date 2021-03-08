@@ -43,7 +43,6 @@ module.exports = {
             }
           ]
         }
-
       },
        {
         resolve: `gatsby-plugin-manifest`,
@@ -57,12 +56,6 @@ module.exports = {
           icon: `${__dirname}/static/logo.jpg`,
         },
       },
-      {
-        resolve: `gatsby-plugin-offline`,
-        options: {
-          precachePages: [`/`,`/about/`, `/blog/*`, `/contact/`],
-        },
-      },
+      "gatsby-plugin-offline"
   ]
-
 }
